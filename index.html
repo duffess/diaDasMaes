@@ -132,23 +132,14 @@
       </div>
     </div>
 
-    <button id="videoButton" onclick="redirectToVideo()">
-      Assista a um vídeo para mamãe!
+    <button id="videoButton" onclick="openVideo()">
+      Assista a um vídeo animado hehe :p
     </button>
 
     <script>
-      document.querySelectorAll(".part").forEach((part) => {
-        part.addEventListener("click", () => {
-          const message = part.querySelector(".message");
-          message.style.display =
-            message.style.display === "block" ? "none" : "block";
-        });
-      });
-
-      function redirectToVideo() {
-        // Redirecionar para o link do vídeo do YouTube
-        window.location.href = "URL_DO_SEU_VÍDEO_YOUTUBE";
-      }
+      function openVideo() {
+        window.open('/videoplayback.mp4');
+    }
     </script>
   </body>
 </html>
